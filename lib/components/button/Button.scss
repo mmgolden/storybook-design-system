@@ -1,0 +1,20 @@
+@import "../../styles/variables";
+
+.button {
+  background: $color-background-primary;
+  color: $color-text-inverse;
+  border: 1px solid $color-background-primary;
+  border-radius: 4px;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: $color-background-primary-hovered;
+  border-color: $color-background-primary-hovered;
+}

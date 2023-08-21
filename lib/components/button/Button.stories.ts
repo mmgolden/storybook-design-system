@@ -4,9 +4,22 @@ import Button from './Button.vue';
 const meta = {
   title: "Button",
   component: Button,
+  tags: ['autodocs'],
+  argTypes: {
+    label: {
+      description: 'The text shown on the button',
+    },
+  } as any,
   args: {
     label: 'Test'
-  } as any
+  } as any,
+  parameters: {
+    docs: {
+      description: {
+        component: 'The base button component'
+      },
+    },
+  },
 } satisfies Meta<typeof Button>;
 
 export default meta;

@@ -1,7 +1,12 @@
 {
   "name": "@mmgolden/storybook-design-system",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mmgolden/storybook-design-system"
+  },
+  "license": "MIT",
   "files": [
     "dist"
   ],
@@ -13,7 +18,8 @@
       "import": "./dist/storybook-design-system.js",
       "require": "./dist/storybook-design-system.umd.js"
     },
-    "./dist/style.css": "./dist/style.css"
+    "./dist/styles/variables.scss": "./dist/styles/variables.scss",
+    "./dist/components/button/Button.scss": "./dist/components/button/Button.scss"
   },
   "scripts": {
     "dev": "vite",
@@ -37,9 +43,11 @@
     "@vitejs/plugin-vue": "^4.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "sass": "^1.65.1",
     "storybook": "^7.3.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
+    "vite-plugin-static-copy": "^0.17.0",
     "vue-tsc": "^1.8.5"
   }
 }
